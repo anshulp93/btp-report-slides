@@ -1,0 +1,177 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{hra}{misc}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Uday P.~Khedker}{U.~P.~K.}%
+     {Amitabha~Sanyal}{A.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Karkar}{K.}%
+     {Amey}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{UPKASKA1}
+  \strng{fullhash}{UPKASKA1}
+  \field{note}{ACM Transactions on Programming Languages and Systems}
+  \field{title}{Heap Reference Analysis Using Access Graphs}
+  \field{year}{2007}
+\endentry
+
+\entry{mtpreport}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Lightwala}{L.}%
+     {Alefiya}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LA1}
+  \strng{fullhash}{LA1}
+  \field{note}{MTP Thesis, Department of Computer Science and Engineering,
+  Indian Institute of Technology, Bombay.}
+  \field{title}{Interprocedural Liveness Based Heap Points-to Analysis for
+  Java}
+  \field{year}{2013}
+\endentry
+
+\entry{liveness}{misc}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Uday P.~Khedker}{U.~P.~K.}%
+     {Alan~Mycroft}{A.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rawat}{R.}%
+     {Prashant~Singh}{P.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{UPKAMRPS1}
+  \strng{fullhash}{UPKAMRPS1}
+  \field{note}{SAS'12 Proceedings of the 19th international conference on
+  Static Analysis}
+  \field{title}{Liveness-Based pointer analysis}
+  \field{year}{2012}
+\endentry
+
+\entry{slides}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Khedker}{K.}%
+     {Uday~P.}{U.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KUP1}
+  \strng{fullhash}{KUP1}
+  \field{note}{Department of Computer Science and Engineering, Indian Institute
+  of Technology, Bombay.}
+  \field{title}{Slides on Interprocedural Data Flow Analysis}
+  \field{year}{2013}
+\endentry
+
+\entry{vasco}{misc}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Padhye}{P.}%
+     {Rohan}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Khedker}{K.}%
+     {Uday~P.}{U.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PRKUP1}
+  \strng{fullhash}{PRKUP1}
+  \field{note}{In the Proceedings of the 2nd ACM SIGPLAN}
+  \field{title}{Interprocedural Data Flow Analysis in Soot using Value
+  Contexts}
+  \field{year}{2013}
+\endentry
+
+\entry{Arnab2006}{misc}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Arnab~De}{A.~D.}%
+     {Deepak~D’Souza}{D.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nasre}{N.}%
+     {Rupesh}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ADDDNR1}
+  \strng{fullhash}{ADDDNR1}
+  \field{title}{Dataflow Analysis for Datarace-Free Programs}
+  \list{institution}{2}{%
+    {Computer Science}%
+    {Automation Indian Institute of Science, India}%
+  }
+  \field{year}{2010}
+\endentry
+
+\entry{sootguide}{unpublished}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Einarsson}{E.}%
+     {Arni}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nielsen}{N.}%
+     {Janus~Dam}{J.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EANJD1}
+  \strng{fullhash}{EANJD1}
+  \field{note}{Notes for the {Soot} framework from McGill University}
+  \field{title}{A Survivor's Guide to Java Program Analysis with Soot}
+  \field{year}{2008}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{btpreport}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Bhandari}{B.}%
+     {Aditya}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BA1}
+  \strng{fullhash}{BA1}
+  \field{note}{BTP Thesis, Department of Computer Science and Engineering,
+  Indian Institute of Technology, Bombay.}
+  \field{title}{Data Flow Analysis for Concurrent Programs}
+  \field{year}{2013}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

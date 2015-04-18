@@ -1,0 +1,71 @@
+
+
+\documentclass[a4paper, 12pt]{report}
+%\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry} % to change the page dimensions
+
+\usepackage[pdftex]{graphicx}
+\usepackage{csquotes}
+\usepackage[backend=bibtex,style=numeric,sorting=none]{biblatex}
+\usepackage{caption}
+\usepackage{subcaption} % for subfigure
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{algpseudocode}
+\usepackage{amsthm} % for theorem
+\usepackage{algorithm}
+\addbibresource{bibliography}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Example} % same for example numbers
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=4
+}
+
+\begin{document}
+\pagenumbering{roman}
+\include{cover}
+\include{abstract}
+%\include{acknowledgements}
+\include{contents}
+\pagenumbering{arabic}
+\include{Chapters/introduction}
+\include{Chapters/chapter2}
+\include{Chapters/chapter3}
+\include{Chapters/chapter4}
+\include{Chapters/chapter5}
+%\include{Chapters/chapter6}
+%\include{Chapters/chapter7}
+\include{Chapters/conclusion}
+%\pagenumbering{roman}
+
+\include{references}
+
+
+\end{document}

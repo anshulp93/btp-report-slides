@@ -1,0 +1,100 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: cover.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: contents.aux
+A level-1 auxiliary file: Chapters/introduction.aux
+A level-1 auxiliary file: Chapters/chapter2.aux
+A level-1 auxiliary file: Chapters/chapter3.aux
+A level-1 auxiliary file: Chapters/chapter4.aux
+A level-1 auxiliary file: Chapters/chapter5.aux
+A level-1 auxiliary file: Chapters/conclusion.aux
+A level-1 auxiliary file: references.aux
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: main-blx.bib
+Database file #2: bibliography.bib
+Biblatex version: 1.7
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2500 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2504 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2510 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2514 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2514 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2518 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2524 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2528 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2528 of file biblatex.bst
+Reallocated wiz_functions (elt_size=4) to 9000 items from 3530962841051862896.
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the end for entry hra
+while executing---line 2645 of file biblatex.bst
+You've used 9 entries,
+            6019 wiz_defined-function locations,
+            1171 strings with 9509 characters,
+and the built_in function-call counts, 23610 in all, are:
+= -- 975
+> -- 831
+< -- 219
++ -- 279
+- -- 278
+* -- 1369
+:= -- 1543
+add.period$ -- 0
+call.type$ -- 9
+change.case$ -- 118
+chr.to.int$ -- 35
+cite$ -- 16
+duplicate$ -- 2581
+empty$ -- 2490
+format.name$ -- 461
+if$ -- 5479
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 0
+newline$ -- 171
+num.names$ -- 368
+pop$ -- 2570
+preamble$ -- 1
+purify$ -- 144
+quote$ -- 0
+skip$ -- 1528
+stack$ -- 0
+substring$ -- 528
+swap$ -- 759
+text.length$ -- 185
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 330
+warning$ -- 0
+while$ -- 164
+width$ -- 0
+write$ -- 161
+(There were 20 error messages)

@@ -1,0 +1,59 @@
+\chapter{Introduction}
+
+\section{Background on Program Analysis}
+
+Program Analysis is the set of techniques to get appropriate information about the behavior of programs. Static analysis techniques involve computing approximate information about the program without executing it. In this report, only static analysis techniques would be discussed.  \\ 
+
+
+Data flow analysis is a technique for gathering information about the possible set of values calculated at various points in a program. The value at each program point is then propagated in the Control Flow graph (CFG) of the program.  The information gathered is often used by compilers when optimizing a program. 
+
+\section{Types of Data Flow Analysis}
+
+A data flow analysis can be either flow-insensitive or flow-sensitive. \\ 
+
+Flow-insensitive analysis:
+\begin{itemize}
+	\item Ignores the control-flow graph, and assumes that statements can execute in any order.
+	\item Rather than producing a solution for each program point, produces a single solution that is valid for the entire program
+\end{itemize}
+ 
+Flow-sensitive analysis:
+\begin{itemize}
+	\item Takes the control
+	flow structure of a program into account
+	\item Has the computed abstract state that represents different reachable memory states at different program points.
+\end{itemize}
+
+A flow-sensitive version of
+an analysis is more precise and expensive than the flow-insensitive version. \\
+
+Categorizing according to the direction of traversal of program statements in the CFG, data flow analysis can be broadly of 2 types : forward and backward. Examples of
+data-flow analysis are Available Expressions analysis which is a forward data flow analysis
+and Live Variables analysis which is a backward data flow analysis. \\
+
+\section{Inter-Procedural Analysis}
+
+Inter-procedural analysis operates across an entire program makes information flow from caller to callee and vice-versa. It extends the scope of data flow analysis across procedure boundaries and it incorporates the effects of procedure calls in the caller procedures, and calling contexts in the callee procedure. A context-sensitive analysis is an \textbf{interprocedural analysis} which reanalyzes callee procedure for each context whereas context insensitive analysis performs analysis independent of calling context.
+
+
+
+
+
+\section{Concurrency}
+
+For concurrency, we assume the thread model in Java. The high level abstractions of concurrency (such as the DOALL, FORALL, PARBEGIN , PAREND constructs of FORTRAN ) can be modeled in terms of threads and so we use the model of threads to uniformly refer to concurrent programs. The parbegin and parend operations and synchronization during joining of threads will be handled by the Java thread library. The user needs to extend the thread class and define a run method for the object. Invoking the run method on the thread objects starts concurrent execution. For accessing shared data critical sections need to be guarded by the lock and unlock statements. Also we expect a data-race free program as input for analysis.
+
+
+%\section{Pointers in Java}
+%
+%Java does not allow the address of a variable to be taken and thus does not allow assignments of the form y = \&x. Java only provided heap-based pointers. Dereferencing is only possible through object fields in Java as the allocated data items do not possess compile-time name in the program. Java does not provide the * operator for dereferencing. 
+
+\section{Problem Statement}  
+
+The idea of the problem statement is to design a framework for carrying out inter-procedural analysis of concurrent programs and then implement heap reference analysis using the framework. The techniques for performing inter-procedural and concurrent analysis is discussed later in the report. Heap reference analysis refers to determining the information like liveness, accessibility and points-to information of reference expressions. Reference expressions, for example \emph{x.lptr.rptr.data} are primarily used to access the objects in the heap. The main focus is on the java model of heap access, in which root variables (variable \emph{x} is on the stack) are stored on the stack. The root variables represent references to memory in heap. Also, root variables cannot be pointed to by any reference.  
+ 
+\section{Organization of the Report}
+
+In this chapter, an introduction to the basics of Data Flow Analysis and its types were described. I have also mentioned about concurrency model and heap accesses for Java. \\
+
+In the subsequent chapters , I will be covering Heap Reference Analysis, Inter-Procedural Analysis and Concurrent Data Flow Analysis respectively. I would then present the tools required for the implementation in the next chapter followed by summary and future work.    

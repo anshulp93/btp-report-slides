@@ -1,0 +1,20 @@
+\chapter{Conclusion and Future Work}
+
+In this report the topics covered are : 
+
+\begin{itemize}
+	\item The mechanism of Heap reference analysis using points-to and live variable analysis on access paths. It is necessary to store the access path values at a statement as an access graph to keep the data fact bounded.
+	\item The method of value context used to carry out precise inter-procedural analysis with an example case on handling recursion.
+	\item The technique of constructing sync-cfg for performing intra-procedural data flow analysis of concurrent programs.
+	\item The extension of concurrent analysis to an inter-procedural level, by using VASCO for generating call-graph and designing inter-procedural analysis.
+\end{itemize}
+
+The future work to be done is:
+
+\begin{itemize}
+	\item Implementation of CombinedUnitGraph class to handle programs with more than 2 threads.
+	\item Using Value context method of performing inter-procedural analysis on data-race free concurrent programs containing function calls.
+	\item Implementing Heap reference analysis on concurrent programs containing function calls.
+\end{itemize}
+
+%\cite{liveness}\cite{slides}\cite{liveness}\cite{hra}\cite{btpreport}\cite{sootguide}\cite{Arnab2006}\cite{mtpreport}
