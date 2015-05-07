@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  8 DEC 2014 09:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  8 MAY 2015 02:56
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -574,7 +574,8 @@ LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
 
 LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
 
-) (./Chapters/chapter5.aux) (./Chapters/conclusion.aux) (./references.aux))
+) (./Chapters/chapter_new1.aux) (./Chapters/chapter5.aux)
+(./Chapters/conclusion.aux) (./references.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -648,7 +649,7 @@ LaTeX Info: Redefining \pageref on input line 51.
 \openout2 = `cover.aux'.
 
  (./cover.tex
-<Figures/iitbblack.jpg, id=119, 150.5625pt x 144.2991pt>
+<Figures/iitbblack.jpg, id=123, 150.5625pt x 144.2991pt>
 File: Figures/iitbblack.jpg Graphic file (type jpg)
 
 <use Figures/iitbblack.jpg> [1
@@ -777,7 +778,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-<Figures/rsz_points_to_graph.png, id=201, 336.25626pt x 132.495pt>
+<Figures/rsz_points_to_graph.png, id=206, 336.25626pt x 132.495pt>
 File: Figures/rsz_points_to_graph.png Graphic file (type png)
 
 <use Figures/rsz_points_to_graph.png>
@@ -785,7 +786,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-<Figures/hra_access_path.png, id=202, 538.01pt x 259.97125pt>
+<Figures/hra_access_path.png, id=207, 538.01pt x 259.97125pt>
 File: Figures/hra_access_path.png Graphic file (type png)
 
 <use Figures/hra_access_path.png>
@@ -794,7 +795,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--89
  []
 
 [6 <./Figures/rsz_points_to_graph.png (PNG copy)>]
-<Figures/heap_summarization_liveness.png, id=211, 417.56pt x 250.9375pt>
+<Figures/heap_summarization_liveness.png, id=216, 417.56pt x 250.9375pt>
 File: Figures/heap_summarization_liveness.png Graphic file (type png)
 
 <use Figures/heap_summarization_liveness.png>) [7 <./Figures/hra_access_path.pn
@@ -827,7 +828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<Figures/callgraph.png, id=227, 548.0475pt x 356.33125pt>
+<Figures/callgraph.png, id=232, 548.0475pt x 356.33125pt>
 File: Figures/callgraph.png Graphic file (type png)
 
 <use Figures/callgraph.png> [9 <./Figures/callgraph.png>]
@@ -851,7 +852,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
 
-[11] <Figures/interproc_example.png, id=246, 574.145pt x 381.425pt>
+[11] <Figures/interproc_example.png, id=251, 574.145pt x 381.425pt>
 File: Figures/interproc_example.png Graphic file (type png)
 
 <use Figures/interproc_example.png>
@@ -903,11 +904,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<Figures/sync_threads.png, id=263, 426.59375pt x 271.0125pt>
+<Figures/sync_threads.png, id=268, 426.59375pt x 271.0125pt>
 File: Figures/sync_threads.png Graphic file (type png)
 
 <use Figures/sync_threads.png>
-<Figures/sync_no_lock.png, id=264, 416.55624pt x 238.8925pt>
+<Figures/sync_no_lock.png, id=269, 416.55624pt x 238.8925pt>
 File: Figures/sync_no_lock.png Graphic file (type png)
 
 <use Figures/sync_no_lock.png>
@@ -930,7 +931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<Figures/concurrent_analysis.png, id=283, 618.31pt x 361.35pt>
+<Figures/concurrent_analysis.png, id=288, 618.31pt x 361.35pt>
 File: Figures/concurrent_analysis.png Graphic file (type png)
 
 <use Figures/concurrent_analysis.png>
@@ -948,37 +949,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-<Figures/conc_analysis_itr1.png, id=297, 618.31pt x 346.29375pt>
+<Figures/conc_analysis_itr1.png, id=302, 618.31pt x 346.29375pt>
 File: Figures/conc_analysis_itr1.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr1.png>
-<Figures/conc_analysis_itr2.png, id=298, 729.72626pt x 349.305pt>
+<Figures/conc_analysis_itr2.png, id=303, 729.72626pt x 349.305pt>
 File: Figures/conc_analysis_itr2.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr2.png>
-<Figures/conc_analysis_itr3.png, id=299, 785.93625pt x 349.305pt>
+<Figures/conc_analysis_itr3.png, id=304, 785.93625pt x 349.305pt>
 File: Figures/conc_analysis_itr3.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr3.png>
-<Figures/conc_analysis_itr4.png, id=300, 815.045pt x 349.305pt>
+<Figures/conc_analysis_itr4.png, id=305, 815.045pt x 349.305pt>
 File: Figures/conc_analysis_itr4.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr4.png>
-<Figures/conc_analysis_incorrect.png, id=301, 628.3475pt x 339.2675pt>
+<Figures/conc_analysis_incorrect.png, id=306, 628.3475pt x 339.2675pt>
 File: Figures/conc_analysis_incorrect.png Graphic file (type png)
 
 <use Figures/conc_analysis_incorrect.png>
-<Figures/hra_live_concurrent.png, id=302, 357.335pt x 476.78125pt>
+<Figures/hra_live_concurrent.png, id=307, 357.335pt x 476.78125pt>
 File: Figures/hra_live_concurrent.png Graphic file (type png)
 
 <use Figures/hra_live_concurrent.png>) [19 <./Figures/conc_analysis_itr1.png>]
 [20 <./Figures/conc_analysis_itr2.png> <./Figures/conc_analysis_itr3.png> <./Fi
 gures/conc_analysis_itr4.png>] [21 <./Figures/conc_analysis_incorrect.png> <./F
 igures/hra_live_concurrent.png>]
+\openout2 = `Chapters/chapter_new1.aux'.
+
+ (./Chapters/chapter_new1.tex
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+File: Figures/conc_analysis_itr4.png Graphic file (type png)
+<use Figures/conc_analysis_itr4.png>
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+) [22
+
+
+
+] [23]
 \openout2 = `Chapters/chapter5.aux'.
 
  (./Chapters/chapter5.tex
-Chapter 5.
+Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -989,7 +1013,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[22
+[24
 
 
 
@@ -1014,21 +1038,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[23]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
-[24] <Figures/combined-cfg.png, id=385, 950.55125pt x 2213.26875pt>
+[26] <Figures/combined-cfg.png, id=400, 950.55125pt x 2213.26875pt>
 File: Figures/combined-cfg.png Graphic file (type png)
 
-<use Figures/combined-cfg.png>) [25] [26 <./Figures/combined-cfg.png (PNG copy)
+<use Figures/combined-cfg.png>) [27] [28 <./Figures/combined-cfg.png (PNG copy)
 >]
 \openout2 = `Chapters/conclusion.aux'.
 
  (./Chapters/conclusion.tex
-Chapter 6.
-) [27
+Chapter 7.
+) [29
 
 
 
@@ -1039,13 +1063,14 @@ Chapter 6.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-) [28
+) [30
 
 
 
 ] (./main.aux (./cover.aux) (./abstract.aux)
 (./contents.aux) (./Chapters/introduction.aux) (./Chapters/chapter2.aux)
-(./Chapters/chapter3.aux) (./Chapters/chapter4.aux) (./Chapters/chapter5.aux)
+(./Chapters/chapter3.aux) (./Chapters/chapter4.aux)
+(./Chapters/chapter_new1.aux) (./Chapters/chapter5.aux)
 (./Chapters/conclusion.aux) (./references.aux))
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1055,11 +1080,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12976 strings out of 495061
- 203225 string characters out of 1182621
+ 12995 strings out of 495061
+ 203553 string characters out of 1182621
  405555 words of memory out of 3000000
- 15739 multiletter control sequences out of 15000+50000
- 11740 words of font info for 44 fonts, out of 3000000 for 9000
+ 15746 multiletter control sequences out of 15000+50000
+ 12092 words of font info for 45 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,7n,51p,1040b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
@@ -1068,11 +1093,12 @@ xlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public
 /amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (32 pages, 564725 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (34 pages, 576831 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

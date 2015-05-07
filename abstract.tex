@@ -4,6 +4,6 @@
 \end{center}
 
 
-This report mainly deals with designing inter-procedural heap reference analysis for concurrent programs in Java. The analysis is both flow-sensitive and context-sensitive at the inter-procedural level. Heap Reference analysis determines a collection of objects pointed to by program variables or their fields. Java implements pointers by references. This report also discusses about analysis techniques for concurrent programs at intra-procedural level and about extending analysis to inter-procedural level using the VASCO tool.   
+This report mainly deals with designing heap reference analysis for concurrent programs in Java. The analysis is both flow-sensitive and context-sensitive at the inter-procedural level. Heap Reference analysis determines a collection of objects pointed to by program variables or their fields. Java implements pointers by references. This report also discusses about analysis techniques for concurrent programs at intra-procedural level and about extending analysis to inter-procedural level using the VASCO tool. In addition to this, this report introduces the notion of handling of thread switching and thread contexts while performing analysis over a data-race free multi-threaded program. This leads to a more precise analysis, as data flow fact propagation along spurious program execution paths are avoided.  
 
 %\addcontentsline{toc}{chapter}{Abstract}

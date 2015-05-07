@@ -21,9 +21,10 @@
 \BOOKMARK [1][-]{section.4.1}{Memory Model and Data Races}{chapter.4}
 \BOOKMARK [1][-]{section.4.2}{Concurrent analysis technique}{chapter.4}
 \BOOKMARK [1][-]{section.4.3}{Concurrent Heap Liveness Analysis}{chapter.4}
-\BOOKMARK [0][-]{chapter.5}{Design of the Analysis}{}
-\BOOKMARK [1][-]{section.5.1}{Call Graph Generation}{chapter.5}
-\BOOKMARK [1][-]{section.5.2}{Combined Unit Graph}{chapter.5}
-\BOOKMARK [1][-]{section.5.3}{VASCO framework}{chapter.5}
-\BOOKMARK [0][-]{chapter.6}{Conclusion and Future Work}{}
-\BOOKMARK [0][-]{chapter*.19}{Bibliography}{}
+\BOOKMARK [0][-]{chapter.5}{Problem with the Concurrent Analysis Method}{}
+\BOOKMARK [0][-]{chapter.6}{Design of the Analysis}{}
+\BOOKMARK [1][-]{section.6.1}{Call Graph Generation}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Combined Unit Graph}{chapter.6}
+\BOOKMARK [1][-]{section.6.3}{VASCO framework}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}
+\BOOKMARK [0][-]{chapter*.20}{Bibliography}{}

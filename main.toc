@@ -46,14 +46,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Concurrent Heap Liveness Analysis}{18}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Design of the Analysis}{22}{chapter.5}
+\contentsline {chapter}{\numberline {5}Problem with the Concurrent Analysis Method}{22}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Call Graph Generation}{22}{section.5.1}
+\contentsline {chapter}{\numberline {6}Design of the Analysis}{24}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Combined Unit Graph}{24}{section.5.2}
+\contentsline {section}{\numberline {6.1}Call Graph Generation}{24}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}VASCO framework}{25}{section.5.3}
+\contentsline {section}{\numberline {6.2}Combined Unit Graph}{26}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion and Future Work}{27}{chapter.6}
+\contentsline {section}{\numberline {6.3}VASCO framework}{27}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{28}{chapter*.19}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{29}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{30}{chapter*.20}
