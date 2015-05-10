@@ -22,9 +22,10 @@
 \BOOKMARK [1][-]{section.4.2}{Concurrent analysis technique}{chapter.4}
 \BOOKMARK [1][-]{section.4.3}{Concurrent Heap Liveness Analysis}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{Problem with the Concurrent Analysis Method}{}
+\BOOKMARK [1][-]{section.5.1}{Execution of Critical Sections}{chapter.5}
 \BOOKMARK [0][-]{chapter.6}{Design of the Analysis}{}
 \BOOKMARK [1][-]{section.6.1}{Call Graph Generation}{chapter.6}
 \BOOKMARK [1][-]{section.6.2}{Combined Unit Graph}{chapter.6}
 \BOOKMARK [1][-]{section.6.3}{VASCO framework}{chapter.6}
 \BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}
-\BOOKMARK [0][-]{chapter*.20}{Bibliography}{}
+\BOOKMARK [0][-]{chapter*.22}{Bibliography}{}

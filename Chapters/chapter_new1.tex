@@ -16,12 +16,34 @@ The imprecise data flow values are a result of taking into account execution of 
 
 \section{Execution of Critical Sections}
 
-The execution of a multi-threaded program is an interleaving of statements of the multiple threads. Critical sections are regions where the shared variables are  Thus there is a need to identify the critical sections that only execute once. The analysis to figure this out is thread independent. Note that a critical section can only be executed once if there are no backward program edges from a statement after unlock(v) to one before lock(v). For such critical sections we need to keep track to thread switches encountered while performing the analysis. In the example figure 5.1, if the critical section of thread 1 is analyzed and the data flow value is transferred to thread 2 for analysis along an inter-thread edge, it is required to ensure that data flow value in not transferred back to thread 1 after analysis of thread 2 critical section. \\
+The execution of a multi-threaded program is an interleaving of statements of the multiple threads. Critical sections are regions where the shared variables are accessed under mutual exclusion. Thus there is a need to identify the critical sections that only execute once. The analysis to figure this out is thread independent. Note that a critical section can only be executed once if there are no backward program edges from a statement after unlock(v) to one before lock(v). For such critical sections we need to keep track to thread switches encountered while performing the analysis. In the example figure 5.1, if the critical section of thread 1 is analyzed and the data flow value is transferred to thread 2 for analysis along an inter-thread edge, it is required to ensure that data flow value in not transferred back to thread 1 after analysis of thread 2 critical section. \\
+
 
 For handling such cases, we need to examine the presence of loops within each thread. 
 \begin{itemize}
 	\item If there is no loop within and across a critical section, it can only be executed once.
 	\item If a loop is present within a critical section, even then the critical section can be executed only once. This is so because if 1 thread enters a critical section, all other threads wait until the this thread completes executing the loop inside the critical section.
-	\item It a loop is present across a critical section in a thread, then the critical section can 
-\end{itemize}
+	\item It a loop is present across a critical section in a thread, then the critical section can be executed zero or more number of times. Apart from that we may have execution of other critical sections between two executions on this critical section (inter-leaving) possible.
+\end{itemize} 
+
+Thus we need to figure out how to store the thread switchings in an access graph. One possible way is to store thread id corresponding to every edge in the access graph. Once each edge is labeled, we need to identify which paths are possible with respect to the execution semantics. For instance, as pointed above, we cannot allow paths with multiple thread switches into a critical section which can only be executed once. We will now need to examine all the paths where the execution semantics are followed. \\
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_thr_itr3.jpg}
+	\caption{Concurrent Heap liveness analysis example. Note that edges are marked by thread id}
+	\label{fig:threadidanalysis}
+\end{figure}
+
+In figure 5.2, at the point main, we obtain an access graph which includes multiple access links. By imposing the restrictions that concurrent sections in thread 1 and 2 can only be executed once, we can discard all the access paths that contain more than 1 edges labeled 1 or 2. This way we can ensure that we get precise links.
+
+Suppose we take another example in which we have an inner loop in a critical section. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/crop.png}
+	\caption{Concurrent Heap liveness analysis example. Note that edges are marked by thread id}
+	\label{fig:threadidanalysis}
+\end{figure}
+
           
