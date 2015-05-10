@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  9 MAY 2015 19:23
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  10 MAY 2015 15:39
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -574,8 +574,11 @@ LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
 
 LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
 
-) (./Chapters/chapter_new1.aux) (./Chapters/chapter5.aux)
-(./Chapters/conclusion.aux) (./references.aux))
+) (./Chapters/chapter_new1.aux
+
+LaTeX Warning: Label `fig:threadidanalysis' multiply defined.
+
+) (./Chapters/chapter5.aux) (./Chapters/conclusion.aux) (./references.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -1017,11 +1020,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 File: Figures/conc_analysis_thr_itr3.jpg Graphic file (type jpg)
 
 <use Figures/conc_analysis_thr_itr3.jpg>
-<Figures/crop.png, id=349, 1751.54375pt x 1497.595pt>
-File: Figures/crop.png Graphic file (type png)
- <use Figures/crop.png>)
-[24 <./Figures/conc_analysis_thr_itr3.jpg>] [25 <./Figures/crop.png (PNG copy)>
-]
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+<Figures/rsz_crop.png, id=349, 1646.15pt x 723.70375pt>
+File: Figures/rsz_crop.png Graphic file (type png)
+
+<use Figures/rsz_crop.png>) [24 <./Figures/conc_analysis_thr_itr3.jpg>]
+[25 <./Figures/rsz_crop.png (PNG copy)>]
 \openout2 = `Chapters/chapter5.aux'.
 
  (./Chapters/chapter5.tex
@@ -1103,28 +1120,25 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13013 strings out of 495061
- 203930 string characters out of 1182621
+ 13012 strings out of 495061
+ 203939 string characters out of 1182621
  405555 words of memory out of 3000000
  15756 multiletter control sequences out of 15000+50000
  12092 words of font info for 45 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,7n,51p,1040b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{chapter*.21} has been referenced but does not exi
-st, replaced by a fixed one
-
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
-/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (36 pages, 707020 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (36 pages, 668945 bytes).
 PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
+ 526 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
  339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

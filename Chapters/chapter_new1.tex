@@ -35,13 +35,15 @@ Thus we need to figure out how to store the thread switchings in an access graph
 	\label{fig:threadidanalysis}
 \end{figure}
 
-In figure 5.2, at the point main, we obtain an access graph which includes multiple access links. By imposing the restrictions that concurrent sections in thread 1 and 2 can only be executed once, we can discard all the access paths that contain more than 1 edges labeled 1 or 2. This way we can ensure that we get precise links.
+In figure 5.2, at the point main, we obtain an access graph which includes multiple access links. By imposing the restrictions that concurrent sections in thread 1 and 2 can only be executed once, we can discard all the access paths that contain more than 1 edges labeled 1 or 2. This way we can ensure that we get precise links. \\
 
-Suppose we take another example in which we have an inner loop in a critical section. 
+Suppose we take another example in which we have an inner loop in a critical section (see figure 5.3). The access  graph obtained in this example is again similar to the previous example. The difference being that the loop in $thread_2$'s critical section can be executed zero or more times. Due to this we get an edge from $f2$ to itself in each of the final access graphs. The possible executions of the program are either \emph{C1.C2\textsuperscript{*} } or \emph{ C2\textsuperscript{*}.C1 } , where $C_1$ and $C_2$ are critical sections of thread 1 and 2 respectively. Even in this example, applying the basic concurrent analysis shows access links that are not live to be live. For example links like {$x$.$f_1$.$f_2$\textsuperscript{*}.$f_1$}, which contain multiple occurrences of $f_1$. \\
+
+For ensuring that only live paths are returned, we would need to impose the condition that critical section of thread 1 can only be executed once, while performing the analysis. We can allow 0 or more occurrence of edges labeled 2 in the example. \\ 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/crop.png}
+	\includegraphics[width=0.8\textwidth]{Figures/rsz_crop.png}
 	\caption{Concurrent Heap liveness analysis example. Note that edges are marked by thread id}
 	\label{fig:threadidanalysis}
 \end{figure}
