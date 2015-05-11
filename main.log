@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  10 MAY 2015 15:39
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  10 MAY 2015 15:56
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -1034,11 +1034,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-<Figures/rsz_crop.png, id=349, 1646.15pt x 723.70375pt>
-File: Figures/rsz_crop.png Graphic file (type png)
+<Figures/rsz_loop_inside.png, id=349, 1620.0525pt x 711.65875pt>
+File: Figures/rsz_loop_inside.png Graphic file (type png)
 
-<use Figures/rsz_crop.png>) [24 <./Figures/conc_analysis_thr_itr3.jpg>]
-[25 <./Figures/rsz_crop.png (PNG copy)>]
+<use Figures/rsz_loop_inside.png>) [24 <./Figures/conc_analysis_thr_itr3.jpg>]
+[25 <./Figures/rsz_loop_inside.png (PNG copy)>]
 \openout2 = `Chapters/chapter5.aux'.
 
  (./Chapters/chapter5.tex
@@ -1121,7 +1121,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  13012 strings out of 495061
- 203939 string characters out of 1182621
+ 203974 string characters out of 1182621
  405555 words of memory out of 3000000
  15756 multiletter control sequences out of 15000+50000
  12092 words of font info for 45 fonts, out of 3000000 for 9000
@@ -1136,7 +1136,7 @@ cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/
 texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (36 pages, 668945 bytes).
+Output written on main.pdf (36 pages, 669565 bytes).
 PDF statistics:
  526 PDF objects out of 1000 (max. 8388607)
  164 named destinations out of 1000 (max. 500000)

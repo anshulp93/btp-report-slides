@@ -43,9 +43,9 @@ For ensuring that only live paths are returned, we would need to impose the cond
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/rsz_crop.png}
+	\includegraphics[width=0.8\textwidth]{Figures/rsz_loop_inside.png}
 	\caption{Concurrent Heap liveness analysis example. Note that edges are marked by thread id}
 	\label{fig:threadidanalysis}
 \end{figure}
 
-          
+Another interesting case is when we have a loop across a critical section. This means that we can access the critical section zero or more times. In the previous 2 examples, we could only execute the critical sections once for all the threads. Consider the example shown in Figure 5.4. This is a slight modification of figure 5.5, with the loop being outside/across the lock/unlock statements.        
