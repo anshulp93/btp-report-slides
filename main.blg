@@ -8,6 +8,8 @@ A level-1 auxiliary file: Chapters/introduction.aux
 A level-1 auxiliary file: Chapters/chapter2.aux
 A level-1 auxiliary file: Chapters/chapter3.aux
 A level-1 auxiliary file: Chapters/chapter4.aux
+A level-1 auxiliary file: Chapters/chapter_new1.aux
+A level-1 auxiliary file: Chapters/chapter_new2.aux
 A level-1 auxiliary file: Chapters/chapter5.aux
 A level-1 auxiliary file: Chapters/conclusion.aux
 A level-1 auxiliary file: references.aux
@@ -58,7 +60,7 @@ Name 1 in "Uday P. Khedker, Amitabha Sanyal, and Amey Karkar" has a comma at the
 while executing---line 2645 of file biblatex.bst
 You've used 9 entries,
             6019 wiz_defined-function locations,
-            1171 strings with 9509 characters,
+            1173 strings with 9559 characters,
 and the built_in function-call counts, 23610 in all, are:
 = -- 975
 > -- 831
