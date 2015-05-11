@@ -1,13 +1,13 @@
 \chapter{Problem with the Concurrent Analysis Method}
 
-The analysis technique presented in the previous chapter, propagates the data flow values across inter-thread edges in the same way as it propagates the data flow flow along inter-thread edges. Consider the output of heap-liveness analysis technique on the same example of the previous chapter. The figure 5.1 is the final data flow value obtained after convergence. \\
+The analysis technique presented in the previous chapter, propagates the data flow values across inter-thread edges in the same way as it propagates the data flow along inter-thread edges. Consider the output of heap-liveness analysis technique on the same example of the previous chapter. The figure 5.1 is the final data flow value obtained after convergence. \\
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_itr4.png}
-	\caption{Example of the concurrent analysis technique}
-	\label{fig:ch5example}
-\end{figure}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_itr4.png}
+		\caption{Example of the concurrent analysis technique}
+		\label{fig:ch5example}
+	\end{figure}
 
 
 At the program point containing the main statement, the possible live links would be \emph{x.f1.f2.r} or \emph{x.f2.f1.r}. However the final data flow value  obtained at the main statement includes access links \emph{x.f1.r}, \emph{x.f2.r} , \emph {x.\{f2.f1\}\textsuperscript{+}.r}, \emph{x.\{f1.f2\}\textsuperscript{+}.r} which are imprecise values. The major source of error is due to the transitions from node $f_1$ to $f_2$ and from $f_2$ to $f_1$ in the access graph. \\
