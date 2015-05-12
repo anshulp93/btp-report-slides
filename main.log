@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  12 MAY 2015 02:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  12 MAY 2015 10:10
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -597,6 +597,12 @@ LaTeX Warning: Label `fig:ch5example' multiply defined.
 
 LaTeX Warning: Label `fig:ch5example' multiply defined.
 
+
+LaTeX Warning: Label `fig:ch5example' multiply defined.
+
+
+LaTeX Warning: Label `fig:ch5example' multiply defined.
+
 ) (./Chapters/chapter5.aux) (./Chapters/conclusion.aux) (./references.aux))
 \openout1 = `main.aux'.
 
@@ -671,7 +677,7 @@ LaTeX Info: Redefining \pageref on input line 51.
 \openout2 = `cover.aux'.
 
  (./cover.tex
-<Figures/iitbblack.jpg, id=139, 150.5625pt x 144.2991pt>
+<Figures/iitbblack.jpg, id=143, 150.5625pt x 144.2991pt>
 File: Figures/iitbblack.jpg Graphic file (type jpg)
 
 <use Figures/iitbblack.jpg> [1
@@ -800,7 +806,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-<Figures/rsz_points_to_graph.png, id=226, 336.25626pt x 132.495pt>
+<Figures/rsz_points_to_graph.png, id=231, 336.25626pt x 132.495pt>
 File: Figures/rsz_points_to_graph.png Graphic file (type png)
 
 <use Figures/rsz_points_to_graph.png>
@@ -808,7 +814,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
-<Figures/hra_access_path.png, id=227, 538.01pt x 259.97125pt>
+<Figures/hra_access_path.png, id=232, 538.01pt x 259.97125pt>
 File: Figures/hra_access_path.png Graphic file (type png)
 
 <use Figures/hra_access_path.png>
@@ -817,7 +823,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--89
  []
 
 [6 <./Figures/rsz_points_to_graph.png (PNG copy)>]
-<Figures/heap_summarization_liveness.png, id=236, 417.56pt x 250.9375pt>
+<Figures/heap_summarization_liveness.png, id=241, 417.56pt x 250.9375pt>
 File: Figures/heap_summarization_liveness.png Graphic file (type png)
 
 <use Figures/heap_summarization_liveness.png>) [7 <./Figures/hra_access_path.pn
@@ -850,7 +856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-<Figures/callgraph.png, id=252, 548.0475pt x 356.33125pt>
+<Figures/callgraph.png, id=257, 548.0475pt x 356.33125pt>
 File: Figures/callgraph.png Graphic file (type png)
 
 <use Figures/callgraph.png> [9 <./Figures/callgraph.png>]
@@ -874,7 +880,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--70
 
  []
 
-[11] <Figures/interproc_example.png, id=271, 574.145pt x 381.425pt>
+[11] <Figures/interproc_example.png, id=276, 574.145pt x 381.425pt>
 File: Figures/interproc_example.png Graphic file (type png)
 
 <use Figures/interproc_example.png>
@@ -926,11 +932,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<Figures/sync_threads.png, id=288, 426.59375pt x 271.0125pt>
+<Figures/sync_threads.png, id=293, 426.59375pt x 271.0125pt>
 File: Figures/sync_threads.png Graphic file (type png)
 
 <use Figures/sync_threads.png>
-<Figures/sync_no_lock.png, id=289, 416.55624pt x 238.8925pt>
+<Figures/sync_no_lock.png, id=294, 416.55624pt x 238.8925pt>
 File: Figures/sync_no_lock.png Graphic file (type png)
 
 <use Figures/sync_no_lock.png>
@@ -953,7 +959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<Figures/concurrent_analysis.png, id=308, 618.31pt x 361.35pt>
+<Figures/concurrent_analysis.png, id=313, 618.31pt x 361.35pt>
 File: Figures/concurrent_analysis.png Graphic file (type png)
 
 <use Figures/concurrent_analysis.png>
@@ -971,27 +977,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-<Figures/conc_analysis_itr1.png, id=322, 618.31pt x 346.29375pt>
+<Figures/conc_analysis_itr1.png, id=327, 618.31pt x 346.29375pt>
 File: Figures/conc_analysis_itr1.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr1.png>
-<Figures/conc_analysis_itr2.png, id=323, 729.72626pt x 349.305pt>
+<Figures/conc_analysis_itr2.png, id=328, 729.72626pt x 349.305pt>
 File: Figures/conc_analysis_itr2.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr2.png>
-<Figures/conc_analysis_itr3.png, id=324, 785.93625pt x 349.305pt>
+<Figures/conc_analysis_itr3.png, id=329, 785.93625pt x 349.305pt>
 File: Figures/conc_analysis_itr3.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr3.png>
-<Figures/conc_analysis_itr4.png, id=325, 815.045pt x 349.305pt>
+<Figures/conc_analysis_itr4.png, id=330, 815.045pt x 349.305pt>
 File: Figures/conc_analysis_itr4.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr4.png>
-<Figures/conc_analysis_incorrect.png, id=326, 628.3475pt x 339.2675pt>
+<Figures/conc_analysis_incorrect.png, id=331, 628.3475pt x 339.2675pt>
 File: Figures/conc_analysis_incorrect.png Graphic file (type png)
 
 <use Figures/conc_analysis_incorrect.png>
-<Figures/hra_live_concurrent.png, id=327, 357.335pt x 476.78125pt>
+<Figures/hra_live_concurrent.png, id=332, 357.335pt x 476.78125pt>
 File: Figures/hra_live_concurrent.png Graphic file (type png)
 
 <use Figures/hra_live_concurrent.png>) [19 <./Figures/conc_analysis_itr1.png>]
@@ -1035,7 +1041,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[23] <Figures/conc_analysis_thr_itr3.jpg, id=363, 815.045pt x 349.305pt>
+[23] <Figures/conc_analysis_thr_itr3.jpg, id=368, 815.045pt x 349.305pt>
 File: Figures/conc_analysis_thr_itr3.jpg Graphic file (type jpg)
 
 <use Figures/conc_analysis_thr_itr3.jpg>
@@ -1054,7 +1060,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
  []
 
 [24 <./Figures/conc_analysis_thr_itr3.jpg>]
-<Figures/rsz_loop_inside.png, id=369, 1620.0525pt x 711.65875pt>
+<Figures/rsz_loop_inside.png, id=374, 1620.0525pt x 711.65875pt>
 File: Figures/rsz_loop_inside.png Graphic file (type png)
 
 <use Figures/rsz_loop_inside.png>
@@ -1062,7 +1068,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<Figures/rsz_loop_outside.png, id=370, 1581.91pt x 714.67pt>
+<Figures/rsz_loop_outside.png, id=375, 1581.91pt x 714.67pt>
 File: Figures/rsz_loop_outside.png Graphic file (type png)
 
 <use Figures/rsz_loop_outside.png>
@@ -1091,7 +1097,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<Figures/access_graph_rep.png, id=381, 1514.65875pt x 470.75874pt>
+<Figures/access_graph_rep.png, id=386, 1514.65875pt x 470.75874pt>
 File: Figures/access_graph_rep.png Graphic file (type png)
 
 <use Figures/access_graph_rep.png>
@@ -1124,7 +1130,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 [28 <./Figures/access_graph_rep.png (PNG copy)>]
-<Figures/tree1.png, id=392, 1552.80125pt x 629.35126pt>
+<Figures/tree1.png, id=397, 1552.80125pt x 629.35126pt>
 File: Figures/tree1.png Graphic file (type png)
 
 <use Figures/tree1.png>
@@ -1132,25 +1138,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<Figures/tree2.png, id=393, 1499.6025pt x 651.43375pt>
+<Figures/tree2.png, id=398, 1499.6025pt x 651.43375pt>
 File: Figures/tree2.png Graphic file (type png)
  <use Figures/tree2.png>
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<Figures/tree3.png, id=394, 1483.5425pt x 619.31375pt>
+<Figures/tree3.png, id=399, 1483.5425pt x 619.31375pt>
 File: Figures/tree3.png Graphic file (type png)
  <use Figures/tree3.png>
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
 [29 <./Figures/tree1.png (PNG copy)> <./Figures/tree2.png (PNG copy)>]
-<Figures/tree4.png, id=401, 1527.7075pt x 616.3025pt>
+<Figures/tree4.png, id=406, 1527.7075pt x 616.3025pt>
 File: Figures/tree4.png Graphic file (type png)
- <use Figures/tree4.png>)
+ <use Figures/tree4.png>
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
 [30 <./Figures/tree3.png (PNG copy)> <./Figures/tree4.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 78.
+(/usr/share/texmf-texlive/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 78.
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+[32] <Figures/automata_rep.png, id=422, 474.77374pt x 444.66125pt>
+File: Figures/automata_rep.png Graphic file (type png)
+
+<use Figures/automata_rep.png>
+<Figures/automata_state.png, id=423, 650.43pt x 305.14pt>
+File: Figures/automata_state.png Graphic file (type png)
+
+<use Figures/automata_state.png>) [33 <./Figures/automata_rep.png (PNG copy)> <
+./Figures/automata_state.png (PNG copy)>]
 \openout2 = `Chapters/chapter5.aux'.
 
-
-(./Chapters/chapter5.tex
+ (./Chapters/chapter5.tex
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1162,7 +1214,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[31
+[34
 
 
 
@@ -1187,21 +1239,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[32]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
-[33] <Figures/combined-cfg.png, id=466, 950.55125pt x 2213.26875pt>
+[36] <Figures/combined-cfg.png, id=488, 950.55125pt x 2213.26875pt>
 File: Figures/combined-cfg.png Graphic file (type png)
 
-<use Figures/combined-cfg.png>) [34] [35 <./Figures/combined-cfg.png (PNG copy)
+<use Figures/combined-cfg.png>) [37] [38 <./Figures/combined-cfg.png (PNG copy)
 >]
 \openout2 = `Chapters/conclusion.aux'.
 
  (./Chapters/conclusion.tex
 Chapter 8.
-) [36
+) [39
 
 
 
@@ -1212,7 +1264,7 @@ Chapter 8.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-) [37
+) [40
 
 
 
@@ -1229,25 +1281,26 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13067 strings out of 495061
- 205057 string characters out of 1182621
+ 13100 strings out of 495061
+ 205672 string characters out of 1182621
  405555 words of memory out of 3000000
- 15784 multiletter control sequences out of 15000+50000
+ 15806 multiletter control sequences out of 15000+50000
  12092 words of font info for 45 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,7n,51p,1079b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,7n,51p,1824b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public
 /amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (41 pages, 833406 bytes).
+cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (44 pages, 865319 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 178 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 184 named destinations out of 1000 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 

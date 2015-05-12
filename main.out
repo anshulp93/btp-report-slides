@@ -26,9 +26,10 @@
 \BOOKMARK [1][-]{section.5.2}{Examples highlighting the problems}{chapter.5}
 \BOOKMARK [0][-]{chapter.6}{Improvements in the Analysis}{}
 \BOOKMARK [1][-]{section.6.1}{Concurrent Heap Access examples}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Representation for execution sequences}{chapter.6}
 \BOOKMARK [0][-]{chapter.7}{Tools for Design of the Analysis}{}
 \BOOKMARK [1][-]{section.7.1}{Call Graph Generation}{chapter.7}
 \BOOKMARK [1][-]{section.7.2}{Combined Unit Graph}{chapter.7}
 \BOOKMARK [1][-]{section.7.3}{VASCO framework}{chapter.7}
 \BOOKMARK [0][-]{chapter.8}{Conclusion and Future Work}{}
-\BOOKMARK [0][-]{chapter*.28}{Bibliography}{}
+\BOOKMARK [0][-]{chapter*.30}{Bibliography}{}

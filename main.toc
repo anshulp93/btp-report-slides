@@ -56,14 +56,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}Concurrent Heap Access examples}{28}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Tools for Design of the Analysis}{31}{chapter.7}
+\contentsline {section}{\numberline {6.2}Representation for execution sequences}{31}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Call Graph Generation}{31}{section.7.1}
+\contentsline {chapter}{\numberline {7}Tools for Design of the Analysis}{34}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Combined Unit Graph}{33}{section.7.2}
+\contentsline {section}{\numberline {7.1}Call Graph Generation}{34}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}VASCO framework}{34}{section.7.3}
+\contentsline {section}{\numberline {7.2}Combined Unit Graph}{36}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{36}{chapter.8}
+\contentsline {section}{\numberline {7.3}VASCO framework}{37}{section.7.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{37}{chapter*.28}
+\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{39}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{40}{chapter*.30}
