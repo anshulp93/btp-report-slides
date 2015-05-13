@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  12 MAY 2015 10:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  13 MAY 2015 23:28
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -603,23 +603,26 @@ LaTeX Warning: Label `fig:ch5example' multiply defined.
 
 LaTeX Warning: Label `fig:ch5example' multiply defined.
 
+
+LaTeX Warning: Label `fig:ch5example' multiply defined.
+
 ) (./Chapters/chapter5.aux) (./Chapters/conclusion.aux) (./references.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -649,14 +652,14 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
+Package biblatex Info: Reference section=0 on input line 60.
+Package biblatex Info: Reference segment=0 on input line 60.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 51.
+Package hyperref Info: Link coloring OFF on input line 60.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -665,8 +668,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count291
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -690,7 +693,7 @@ File: Figures/iitbblack.jpg Graphic file (type jpg)
 ame{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.54 \include{abstract}
+l.63 \include{abstract}
                         [1
 
 
@@ -754,6 +757,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
 [2]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
@@ -865,9 +903,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 [10]
-Overfull \hbox (48.42522pt too wide) in paragraph at lines 60--60
+Overfull \hbox (344.82536pt too wide) in paragraph at lines 60--60
 []\OT1/cmtt/m/n/12 // Callsites are appended to the current call string before 
-making call[] 
+making call f and g are pointers to nodes in a linked list.[] 
  []
 
 
@@ -932,11 +970,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-<Figures/sync_threads.png, id=293, 426.59375pt x 271.0125pt>
+<Figures/sync_threads.png, id=294, 426.59375pt x 271.0125pt>
 File: Figures/sync_threads.png Graphic file (type png)
 
 <use Figures/sync_threads.png>
-<Figures/sync_no_lock.png, id=294, 416.55624pt x 238.8925pt>
+<Figures/sync_no_lock.png, id=295, 416.55624pt x 238.8925pt>
 File: Figures/sync_no_lock.png Graphic file (type png)
 
 <use Figures/sync_no_lock.png>
@@ -959,7 +997,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<Figures/concurrent_analysis.png, id=313, 618.31pt x 361.35pt>
+<Figures/concurrent_analysis.png, id=314, 618.31pt x 361.35pt>
 File: Figures/concurrent_analysis.png Graphic file (type png)
 
 <use Figures/concurrent_analysis.png>
@@ -977,27 +1015,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-<Figures/conc_analysis_itr1.png, id=327, 618.31pt x 346.29375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+<Figures/conc_analysis_itr1.png, id=328, 618.31pt x 346.29375pt>
 File: Figures/conc_analysis_itr1.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr1.png>
-<Figures/conc_analysis_itr2.png, id=328, 729.72626pt x 349.305pt>
+<Figures/conc_analysis_itr2.png, id=329, 729.72626pt x 349.305pt>
 File: Figures/conc_analysis_itr2.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr2.png>
-<Figures/conc_analysis_itr3.png, id=329, 785.93625pt x 349.305pt>
+<Figures/conc_analysis_itr3.png, id=330, 785.93625pt x 349.305pt>
 File: Figures/conc_analysis_itr3.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr3.png>
-<Figures/conc_analysis_itr4.png, id=330, 815.045pt x 349.305pt>
+<Figures/conc_analysis_itr4.png, id=331, 815.045pt x 349.305pt>
 File: Figures/conc_analysis_itr4.png Graphic file (type png)
 
 <use Figures/conc_analysis_itr4.png>
-<Figures/conc_analysis_incorrect.png, id=331, 628.3475pt x 339.2675pt>
+<Figures/conc_analysis_incorrect.png, id=332, 628.3475pt x 339.2675pt>
 File: Figures/conc_analysis_incorrect.png Graphic file (type png)
 
 <use Figures/conc_analysis_incorrect.png>
-<Figures/hra_live_concurrent.png, id=332, 357.335pt x 476.78125pt>
+<Figures/hra_live_concurrent.png, id=333, 357.335pt x 476.78125pt>
 File: Figures/hra_live_concurrent.png Graphic file (type png)
 
 <use Figures/hra_live_concurrent.png>) [19 <./Figures/conc_analysis_itr1.png>]
@@ -1041,7 +1084,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[23] <Figures/conc_analysis_thr_itr3.jpg, id=368, 815.045pt x 349.305pt>
+[23] <Figures/conc_analysis_thr_itr3.jpg, id=369, 815.045pt x 349.305pt>
 File: Figures/conc_analysis_thr_itr3.jpg Graphic file (type jpg)
 
 <use Figures/conc_analysis_thr_itr3.jpg>
@@ -1054,13 +1097,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-
+[24 <./Figures/conc_analysis_thr_itr3.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-[24 <./Figures/conc_analysis_thr_itr3.jpg>]
-<Figures/rsz_loop_inside.png, id=374, 1620.0525pt x 711.65875pt>
+<Figures/rsz_loop_inside.png, id=375, 1620.0525pt x 711.65875pt>
 File: Figures/rsz_loop_inside.png Graphic file (type png)
 
 <use Figures/rsz_loop_inside.png>
@@ -1068,7 +1110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<Figures/rsz_loop_outside.png, id=375, 1581.91pt x 714.67pt>
+<Figures/rsz_loop_outside.png, id=376, 1581.91pt x 714.67pt>
 File: Figures/rsz_loop_outside.png Graphic file (type png)
 
 <use Figures/rsz_loop_outside.png>
@@ -1076,8 +1118,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[25 <./Figures/rsz_loop_inside.png (PNG copy)> <./Figures/rsz_loop_outside.png 
-(PNG copy)>]) [26]
+) [25 <./Figures/rsz_loop_inside.png (PNG copy)>] [26 <./Figures/rsz_loop_outsi
+de.png (PNG copy)>]
 \openout2 = `Chapters/chapter_new2.aux'.
 
  (./Chapters/chapter_new2.tex
@@ -1097,7 +1139,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<Figures/access_graph_rep.png, id=386, 1514.65875pt x 470.75874pt>
+<Figures/access_graph_rep.png, id=387, 1514.65875pt x 470.75874pt>
 File: Figures/access_graph_rep.png Graphic file (type png)
 
 <use Figures/access_graph_rep.png>
@@ -1130,7 +1172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 [28 <./Figures/access_graph_rep.png (PNG copy)>]
-<Figures/tree1.png, id=397, 1552.80125pt x 629.35126pt>
+<Figures/tree1.png, id=398, 1552.80125pt x 629.35126pt>
 File: Figures/tree1.png Graphic file (type png)
 
 <use Figures/tree1.png>
@@ -1138,14 +1180,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<Figures/tree2.png, id=398, 1499.6025pt x 651.43375pt>
+<Figures/tree2.png, id=399, 1499.6025pt x 651.43375pt>
 File: Figures/tree2.png Graphic file (type png)
  <use Figures/tree2.png>
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<Figures/tree3.png, id=399, 1483.5425pt x 619.31375pt>
+<Figures/tree3.png, id=400, 1483.5425pt x 619.31375pt>
 File: Figures/tree3.png Graphic file (type png)
  <use Figures/tree3.png>
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
@@ -1153,7 +1195,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 [29 <./Figures/tree1.png (PNG copy)> <./Figures/tree2.png (PNG copy)>]
-<Figures/tree4.png, id=406, 1527.7075pt x 616.3025pt>
+<Figures/tree4.png, id=407, 1527.7075pt x 616.3025pt>
 File: Figures/tree4.png Graphic file (type png)
  <use Figures/tree4.png>
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
@@ -1191,15 +1233,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[32] <Figures/automata_rep.png, id=422, 474.77374pt x 444.66125pt>
+[32] <Figures/automata_rep.png, id=423, 474.77374pt x 444.66125pt>
 File: Figures/automata_rep.png Graphic file (type png)
 
 <use Figures/automata_rep.png>
-<Figures/automata_state.png, id=423, 650.43pt x 305.14pt>
+<Figures/automata_state.png, id=424, 650.43pt x 305.14pt>
 File: Figures/automata_state.png Graphic file (type png)
 
-<use Figures/automata_state.png>) [33 <./Figures/automata_rep.png (PNG copy)> <
-./Figures/automata_state.png (PNG copy)>]
+<use Figures/automata_state.png>
+<Figures/automata_conv.png, id=425, 947.54pt x 921.4425pt>
+File: Figures/automata_conv.png Graphic file (type png)
+
+<use Figures/automata_conv.png>) [33 <./Figures/automata_rep.png (PNG copy)> <.
+/Figures/automata_state.png (PNG copy)>] [34 <./Figures/automata_conv.png (PNG 
+copy)>]
 \openout2 = `Chapters/chapter5.aux'.
 
  (./Chapters/chapter5.tex
@@ -1214,7 +1261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[34
+[35
 
 
 
@@ -1239,32 +1286,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
-[36] <Figures/combined-cfg.png, id=488, 950.55125pt x 2213.26875pt>
+[37] <Figures/combined-cfg.png, id=495, 950.55125pt x 2213.26875pt>
 File: Figures/combined-cfg.png Graphic file (type png)
 
-<use Figures/combined-cfg.png>) [37] [38 <./Figures/combined-cfg.png (PNG copy)
+<use Figures/combined-cfg.png>) [38] [39 <./Figures/combined-cfg.png (PNG copy)
 >]
 \openout2 = `Chapters/conclusion.aux'.
 
  (./Chapters/conclusion.tex
 Chapter 8.
-) [39
+[40
 
 
 
-]
+]) [41]
 \openout2 = `references.aux'.
 
  (./references.tex
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-) [40
+) [42
 
 
 
@@ -1281,13 +1328,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13100 strings out of 495061
- 205672 string characters out of 1182621
- 405555 words of memory out of 3000000
- 15806 multiletter control sequences out of 15000+50000
+ 13109 strings out of 495061
+ 205839 string characters out of 1182621
+ 405587 words of memory out of 3000000
+ 15811 multiletter control sequences out of 15000+50000
  12092 words of font info for 45 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,7n,51p,1824b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,7n,51p,2144b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/
@@ -1298,9 +1345,9 @@ cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texmf-texliv
 e/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (44 pages, 865319 bytes).
+Output written on main.pdf (46 pages, 922952 bytes).
 PDF statistics:
- 606 PDF objects out of 1000 (max. 8388607)
- 184 named destinations out of 1000 (max. 500000)
- 411 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 416 words of extra memory for PDF output out of 10000 (max. 10000000)
 

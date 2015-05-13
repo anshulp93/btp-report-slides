@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  30 NOV 2014 09:19
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.11.7)  13 MAY 2015 23:53
 entering extended mode
  %&-line parsing enabled.
 **slides.tex
@@ -801,7 +801,19 @@ LaTeX Warning: Label `fig:ex1' multiply defined.
 LaTeX Warning: Label `fig:accpath' multiply defined.
 
 
-LaTeX Warning: Label `fig:extreme' multiply defined.
+LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
+
+
+LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
+
+
+LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
+
+
+LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
+
+
+LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
 
 
 LaTeX Warning: Label `fig:nullpointeranalysis' multiply defined.
@@ -981,53 +993,49 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./slides.toc)
-[3
+] [3
 
 ] [4
 
 ] [5
 
-] [6
-
-] [7
-
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 124.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 124.
+LaTeX Font Info:    Try loading font information for U+msb on input line 98.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [8
+) [6
 
 ]
-<Figures/rsz_heap.png, id=240, 646.415pt x 298.11375pt>
+<Figures/rsz_heap.png, id=186, 646.415pt x 298.11375pt>
 File: Figures/rsz_heap.png Graphic file (type png)
 
-<use Figures/rsz_heap.png> [9
+<use Figures/rsz_heap.png> [7
 
  <./Figures/rsz_heap.png (PNG copy)>]
-<Figures/rsz_points_to_graph.png, id=268, 336.25626pt x 132.495pt>
+<Figures/rsz_points_to_graph.png, id=215, 336.25626pt x 132.495pt>
 File: Figures/rsz_points_to_graph.png Graphic file (type png)
 
 <use Figures/rsz_points_to_graph.png>pdfTeX warning (ext4): destination with th
 e same identifier (name{fig:ex1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155   \end{frame}
-                    [10
+l.129   \end{frame}
+                    [8
 
  <./Figures/rsz_points_to_graph.png (PNG copy)>]
-<Figures/hra_access_path.png, id=295, 538.01pt x 259.97125pt>
+<Figures/hra_access_path.png, id=242, 538.01pt x 259.97125pt>
 File: Figures/hra_access_path.png Graphic file (type png)
 
-<use Figures/hra_access_path.png> [11
+<use Figures/hra_access_path.png> [9
 
  <./Figures/hra_access_path.png>]
-<Figures/heap_summarization_liveness.png, id=325, 417.56pt x 250.9375pt>
+<Figures/heap_summarization_liveness.png, id=272, 417.56pt x 250.9375pt>
 File: Figures/heap_summarization_liveness.png Graphic file (type png)
 
 <use Figures/heap_summarization_liveness.png>pdfTeX warning (ext4): destination
@@ -1035,74 +1043,55 @@ File: Figures/heap_summarization_liveness.png Graphic file (type png)
 ignored
 <to be read again> 
                    \relax 
-l.187 \end{frame}
-                  [12
+l.161 \end{frame}
+                  [10
 
- <./Figures/heap_summarization_liveness.png>] [13
+ <./Figures/heap_summarization_liveness.png>] [11
 
 ]
-[14
+[12
+
+] <Figures/callgraph.png, id=352, 548.0475pt x 356.33125pt>
+File: Figures/callgraph.png Graphic file (type png)
+
+<use Figures/callgraph.png> [13
+
+ <./Figures/callgraph.png>] [14
 
 ] [15
 
-] [16
+]
+<Figures/interproc_example.png, id=435, 574.145pt x 381.425pt>
+File: Figures/interproc_example.png Graphic file (type png)
 
-] <Figures/callgraph.png, id=459, 548.0475pt x 356.33125pt>
-File: Figures/callgraph.png Graphic file (type png)
+<use Figures/interproc_example.png> [16
 
-<use Figures/callgraph.png> [17
+ <./Figures/interproc_example.png>]
+[17
 
- <./Figures/callgraph.png>] [18
+] [18
 
 ] [19
 
-] [20
-
-]
-[21
-
-] <Figures/avbl_exp_interproc.png, id=595, 619.31375pt x 391.4625pt>
-File: Figures/avbl_exp_interproc.png Graphic file (type png)
-
-<use Figures/avbl_exp_interproc.png> [22
-
- <./Figures/avbl_exp_interproc.png>]
-<Figures/interproc_example.png, id=624, 574.145pt x 381.425pt>
-File: Figures/interproc_example.png Graphic file (type png)
-
-<use Figures/interproc_example.png>pdfTeX warning (ext4): destination with the 
-same identifier (name{fig:extreme}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.319   \end{frame}
-                    [23
-
- <./Figures/interproc_example.png>] [24
-
-] [25
-
-] [26
-
-]
-<Figures/sync_threads.png, id=732, 426.59375pt x 271.0125pt>
+] <Figures/sync_threads.png, id=544, 426.59375pt x 271.0125pt>
 File: Figures/sync_threads.png Graphic file (type png)
 
-<use Figures/sync_threads.png> [27
+<use Figures/sync_threads.png> [20
 
  <./Figures/sync_threads.png>]
-<Figures/sync_no_lock.png, id=761, 416.55624pt x 238.8925pt>
+<Figures/sync_no_lock.png, id=573, 416.55624pt x 238.8925pt>
 File: Figures/sync_no_lock.png Graphic file (type png)
 
-<use Figures/sync_no_lock.png> [28
+<use Figures/sync_no_lock.png> [21
 
  <./Figures/sync_no_lock.png>]
-<Figures/concurrent_analysis.png, id=790, 618.31pt x 361.35pt>
+<Figures/concurrent_analysis.png, id=602, 618.31pt x 361.35pt>
 File: Figures/concurrent_analysis.png Graphic file (type png)
 
-<use Figures/concurrent_analysis.png> [29
+<use Figures/concurrent_analysis.png> [22
 
  <./Figures/concurrent_analysis.png>]
-<Figures/concurrent_analysis_2.png, id=819, 668.4975pt x 381.425pt>
+<Figures/concurrent_analysis_2.png, id=631, 668.4975pt x 381.425pt>
 File: Figures/concurrent_analysis_2.png Graphic file (type png)
 
 <use Figures/concurrent_analysis_2.png>pdfTeX warning (ext4): destination with 
@@ -1110,11 +1099,11 @@ the same identifier (name{fig:nullpointeranalysis}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \relax 
-l.416 \end{frame}
-                  [30
+l.339 \end{frame}
+                  [23
 
  <./Figures/concurrent_analysis_2.png>]
-<Figures/concurrent_analysis_3.png, id=847, 618.31pt x 346.29375pt>
+<Figures/concurrent_analysis_3.png, id=659, 618.31pt x 346.29375pt>
 File: Figures/concurrent_analysis_3.png Graphic file (type png)
 
 <use Figures/concurrent_analysis_3.png>pdfTeX warning (ext4): destination with 
@@ -1122,13 +1111,11 @@ the same identifier (name{fig:nullpointeranalysis}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \relax 
-l.427 \end{frame}
-                  [31
+l.351 \end{frame}
+                  [24
 
- <./Figures/concurrent_analysis_3.png>] [32
-
-]
-<Figures/hra_live_concurrent.png, id=902, 357.335pt x 476.78125pt>
+ <./Figures/concurrent_analysis_3.png>]
+<Figures/hra_live_concurrent.png, id=687, 357.335pt x 476.78125pt>
 File: Figures/hra_live_concurrent.png Graphic file (type png)
 
 <use Figures/hra_live_concurrent.png>pdfTeX warning (ext4): destination with th
@@ -1136,16 +1123,96 @@ e same identifier (name{fig:nullpointeranalysis}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.449 \end{frame}
+l.362 \end{frame}
                  
-Overfull \vbox (9.46225pt too high) detected at line 449
+Overfull \vbox (9.46225pt too high) detected at line 362
  []
 
-[33
+[25
 
- <./Figures/hra_live_concurrent.png>] [34
+ <./Figures/hra_live_concurrent.png>]
+<Figures/conc_analysis_itr1.png, id=716, 618.31pt x 346.29375pt>
+File: Figures/conc_analysis_itr1.png Graphic file (type png)
+
+<use Figures/conc_analysis_itr1.png>pdfTeX warning (ext4): destination with the
+ same identifier (name{fig:nullpointeranalysis}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.372 \end{frame}
+                  [26
+
+ <./Figures/conc_analysis_itr1.png>]
+<Figures/conc_analysis_itr2.png, id=744, 729.72626pt x 349.305pt>
+File: Figures/conc_analysis_itr2.png Graphic file (type png)
+
+<use Figures/conc_analysis_itr2.png>pdfTeX warning (ext4): destination with the
+ same identifier (name{fig:nullpointeranalysis}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.382 \end{frame}
+                  [27
+
+ <./Figures/conc_analysis_itr2.png>]
+<Figures/conc_analysis_itr3.png, id=772, 785.93625pt x 349.305pt>
+File: Figures/conc_analysis_itr3.png Graphic file (type png)
+
+<use Figures/conc_analysis_itr3.png>pdfTeX warning (ext4): destination with the
+ same identifier (name{fig:nullpointeranalysis}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.392 \end{frame}
+                  [28
+
+ <./Figures/conc_analysis_itr3.png>]
+<Figures/conc_analysis_itr4.png, id=800, 815.045pt x 349.305pt>
+File: Figures/conc_analysis_itr4.png Graphic file (type png)
+
+<use Figures/conc_analysis_itr4.png>pdfTeX warning (ext4): destination with the
+ same identifier (name{fig:nullpointeranalysis}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.402 \end{frame}
+                  [29
+
+ <./Figures/conc_analysis_itr4.png>]
+<Figures/conc_analysis_incorrect.png, id=828, 628.3475pt x 339.2675pt>
+File: Figures/conc_analysis_incorrect.png Graphic file (type png)
+
+<use Figures/conc_analysis_incorrect.png>pdfTeX warning (ext4): destination wit
+h the same identifier (name{fig:nullpointeranalysis}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.415 \end{frame}
+                  [30
+
+ <./Figures/conc_analysis_incorrect.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 426
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 426.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/it' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 426.
+
+[31
+
+] [32
+
+] [33
+
+] [34
 
 ] [35
+
+] [36
+
+] [37
 
 ]
 \tf@nav=\write6
@@ -1163,29 +1230,30 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16579 strings out of 495061
- 306653 string characters out of 1182621
- 375791 words of memory out of 3000000
- 19240 multiletter control sequences out of 15000+50000
- 11825 words of font info for 43 fonts, out of 3000000 for 9000
+ 16610 strings out of 495061
+ 307398 string characters out of 1182621
+ 375811 words of memory out of 3000000
+ 19264 multiletter control sequences out of 15000+50000
+ 11531 words of font info for 42 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  49i,16n,57p,395b,549s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmss9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on slides.pdf (35 pages, 477529 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmss9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmssi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi8.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on slides.pdf (37 pages, 540442 bytes).
 PDF statistics:
- 1031 PDF objects out of 1200 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1087 PDF objects out of 1200 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

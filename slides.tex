@@ -11,9 +11,9 @@
 \usepackage{amsthm} % for theorem
 \usepackage{algorithm}
 \usetheme{Warsaw}
-\title[Inter-procedural \& Concurrent HRA] % (optional, only for long titles)
-{Inter-Procedural Heap Reference Analysis for Concurrent Programs}
-\subtitle{BTP Presentation}
+\title[HRA for Concurrent Programs] % (optional, only for long titles)
+{Heap Analysis for Concurrent Programs}
+\subtitle{BTP-2 Presentation}
 \author[Anshul Purohit] % (optional, for multiple authors)
 {
 Anshul Purohit \\
@@ -21,11 +21,11 @@ Roll No: 110050002 \\
 }
 \institute[Universitäten Hier und Dort] % (optional)
 {
-	
+	Indian Institute of Technology Bombay
 }
 \date[KPT 2004] % (optional)
 {
-Guide: Prof. Uday Khedkar \\
+Guide: Prof. Uday Khedker \\
 }
 \subject{Informatik}
 
@@ -38,59 +38,33 @@ Guide: Prof. Uday Khedkar \\
 \begin{itemize}
 \item Introduction to Problem Statement
 \item Heap Analysis 
-\item Inter-Procedural Analysis
-\item Analysis of Concurrent Programs
-\item Design of analysis and tools
+\item Analysis technique of Concurrent Programs
+\item Problems with the technique
+\item Improvements 
 \end{itemize}
 \end{frame}
-
-  \begin{frame}
-    \frametitle{Introduction - Flow Sensitivity}
-    \tableofcontents[Introduction to Problem Statement]
-
-Data flow analysis is a technique for gathering program information at various points in a program. The value is then propagated in the Control Flow graph (CFG) of the program. It can be classified in two types:
-
-\begin{itemize}
-	\item  Flow-insensitive analysis ignores the control-flow graph, and assumes that statements can execute in any order.
-	\item Flow-sensitive analysis takes control flow structure of program into account.	
-\end{itemize}
-  \end{frame}
-  
-  \begin{frame}
-    \frametitle{Introduction - Interprocedural Analysis}
-
-\begin{itemize}
-	
-	\item Inter-procedural analysis extends the scope of data flow analysis across procedure boundaries.
-	\item It incorporates the effects of procedure calls in the caller procedures and calling contexts in the callee procedure.
-	\item A context-sensitive analysis is an \textbf{inter-procedural analysis} which reanalyzes callee procedure for each context. \item Context insensitive analysis performs analysis independent of calling context.
-	
-\end{itemize}
-	\end{frame}
-	
 	
   \begin{frame}
-  \frametitle{Introduction - Problem Statement}
+  \frametitle{Introduction}
   \begin{itemize}
-  \item Designing a framework for carrying
-  out inter-procedural analysis of concurrent programs and then implement heap reference analysis using the framework.
-  \item Determining the information like liveness,
-  accessibility and points-to information of reference expressions.
+  \item Designing an technique for carrying
+  out heap reference analysis of concurrent programs.
   \item Reference expression like \emph{x.lptr.rptr.data} are primarily used to access the objects in the heap.
+  \item Will primarily focus on determining the  liveness of access links to objects on the heap.
   \item Java model: The root variables, which are stored on stack, represent references to memory in heap.
      
   \end{itemize}
   \end{frame}
   
   \begin{frame}
-  	\frametitle{Introduction - Concurrency}
+  	\frametitle{Introduction}
   	
   	 Model of threads used to refer to concurrent programs in the problem.
   	\begin{itemize}
-  		\item Need to define a run method. Invoking the run method starts concurrent thread execution.
   		\item For accessing shared data,
   		critical sections need to be guarded by the lock and unlock statements.
-  		\item High level abstractions of concurrency can be modeled in terms of threads. Thread library handles spawning, joining and synchronization of threads. 
+  		\item Also, we would work under the assumption that program would be data-race free.
+  		\item Will present a technique to perform analysis for concurrent programs.  
   		
   	\end{itemize}
   	
@@ -101,8 +75,7 @@ Data flow analysis is a technique for gathering program information at various p
 	Analyzing properties of heap data is not very trivial.  
 
 \begin{itemize}
-	\item The structure of stack and static data is simple to understand. 
-	\item Stack variables have a compile-time name(alias) associated with it.
+	\item The structure of stack and static data is simple to understand since stack variables have a compile-time name(alias) associated with it.
 	\item However, heap data has no compile time alias associated. Also the mapping of access expressions to memory location can change during program execution.
 	\item Objects are referred based on their allocation site.
 \end{itemize}
@@ -121,6 +94,7 @@ Data flow analysis is a technique for gathering program information at various p
 		\item Can there exist objects in the heap that will not be reachable from the access expressions in the program?
 		\item Which of the access links will be live at a particular point?
 	\end{itemize}
+	We will focus on the liveness analysis part of the heap reference analysis.
 	\end{frame}
 \begin{frame}
 \frametitle{Points-to analysis for Java}
@@ -186,14 +160,7 @@ An access path can be unbounded in the case of loops. We need to set a bound on 
 
 \end{frame}
 
-\begin{frame}
-\frametitle{Availability and Anticipability}
-	\begin{itemize}
-		\item An access path $\rho$ is said to available at a program point $p$ if the target of each prefix of $\rho$ is guaranteed to be created along each path reaching $p$.
-		\item An access path $\rho$ is said to be anticipable at $p$ if the target of each prefix of $\rho$ will be dereferenced along every path starting from $p$.
-		\item Access graphs are not needed to carry out available and anticipable analysis over heap data because the sets are bounded. This is due to the nature of the problem (over all paths).
-	\end{itemize}
-\end{frame}
+
 
 % RULE SETS %
   \begin{frame}
@@ -204,18 +171,8 @@ An access path can be unbounded in the case of loops. We need to set a bound on 
 	\item It is essential to consider the effect of function call on the data flow value entering the node.
 	\item Inter-procedural analysis takes into account call return , parameter passing , local variables of the function, return values and recursion into account
 	\item Major issue to be dealt while handling inter-procedural analysis is to deal with calling contexts.
+	\item Context-Sensitive analysis
 	\end{itemize}
-  \end{frame}
-  
-  \begin{frame}
-  \frametitle{Context Sensitivity}
-  %\framesubtitle{Analysing existing rule sets}
-\begin{itemize}
-	\item Context insensitive analysis over-approximates inter-procedural control flow. Invalid return control paths are accessed.
-	\item Context sensitive analysis takes into account the calling context, thus only valid return paths are considered.
-	\item Context sensitivity plays an important role in Java as it is an OO language. Data access is indirect through method calls.
-\end{itemize}
-
   \end{frame}
   
   \begin{frame}
@@ -240,29 +197,6 @@ An access path can be unbounded in the case of loops. We need to set a bound on 
   		\end{figure}
   \end{frame}
   
-  \begin{frame}
-  \frametitle{Approaches to Inter-procedural Analysis.}
-  \framesubtitle{Functional}
-  \begin{itemize}
-  	\item Summary flow functions are computed for each function. 
-  	\item Directly apply the summarized flow function for handling call. Summarized flow function is dependent on the callee.
-  	\item Iterative computation of summary flow function would be need till fixed point is achieved. Guaranteed to terminate only for finite lattices. 
-  \end{itemize}	
-
-  \end{frame}
-
-  \begin{frame}
-  \frametitle{Approaches to Inter-procedural Analysis.}
-  \framesubtitle{Call Strings}
-   %\vspace{\baselineskip}
-  Call string at a program point is the sequence of unfinished calls reaching that point starting from the main procedure call.\vspace{\baselineskip}
-  
-  The data flow equations are changed to incorporate the merging of the data flow values only if the contexts(call strings) are the same.\vspace{\baselineskip}
-  
-  At a call node $c_i$ , $c_i$ is appended to the call-string value at that point. Similarly at a return node the last call site ci is removed. For recursive programs, number of call strings can be infinite. \vspace{\baselineskip}
-  
-  Value termination of Call Strings : Grouping into equivalence classes if they have same data flow value at the start node.
-  \end{frame}
   
   \begin{frame}
   \frametitle{Approaches to Inter-procedural Analysis.}
@@ -292,17 +226,6 @@ An access path can be unbounded in the case of loops. We need to set a bound on 
   \end{frame}
   
   \begin{frame}
-  	\frametitle{Example of value context method}
-  	\begin{figure}[here]
-  		\begin{center}
-  			\includegraphics[width=7cm]{Figures/avbl_exp_interproc.png}
-  		\end{center}
-  		\caption{Example for inter-procedural available analysis}
-  		\label{fig:extreme}
-  	\end{figure}
-  \end{frame}
-  
-  \begin{frame}
   \frametitle{Example of value context method}
 \begin{figure}[here]
 \begin{center}
@@ -324,14 +247,14 @@ An access path can be unbounded in the case of loops. We need to set a bound on 
   \begin{itemize}
   	\item Using the technique mentioned in the paper Dataflow Analysis for Datarace-Free Programs.
   	\item Produces an analysis for concurrent programs, given a sequential data-flow analysis
-  	\item Criteria to apply this : Data flow facts should be dependent on the contents of the memory access path. This can be applied to constant propagation, not-null, liveness analysis. The program should be free of data races. 
+  	\item Criteria to apply this : The program should be free of data races. Data flow facts should be dependent on the contents of the memory access path.
   \end{itemize}
   
   \end{frame}
   
 \begin{frame}
 \frametitle{Analysis for concurrent programs}
-Main challenge $\rightarrow$ converting the analysis for sequential programs to concurrent programs. How to propagate data-flow values to handle all possible thread execution order? .
+Main challenge $\rightarrow$ converting the analysis for sequential programs to concurrent programs. How to propagate data-flow values to handle all possible thread execution orders?
 
 \vspace{\baselineskip}
 Synchronization structure of the program is made use of to propagate data-flow values
@@ -423,18 +346,8 @@ The insight is that data-flow values are only propagated between threads at the 
 		\caption{Concurrent Heap Liveness Analysis }
 		\label{fig:nullpointeranalysis}
 	\end{figure}
-	Notice how the data flow value is precise only for statements within the lock-unlock section.
-\end{frame}
+	The analysis is guaranteed to return correct data flow values at relevant program statements.
 	 
-	
-\begin{frame}
-	\frametitle{Analysis to be Implemented}
-	\begin{itemize}
-		\item To implement concurrent heap liveness analysis.
-		\item To extend the concurrent analysis technique to inter-procedural level using the method of value contexts. Support function calls in the critical section of the program.
-	\end{itemize}
-	
-	
 \end{frame}
 
 \begin{frame}
@@ -447,6 +360,112 @@ The insight is that data-flow values are only propagated between threads at the 
 	\end{figure}
 	
 \end{frame}
+
+\begin{frame}
+	\frametitle{Example for concurrent heap liveness analysis}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_itr1.png}
+		\caption{Concurrent Heap liveness analysis iteration 1}
+		\label{fig:nullpointeranalysis}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Example for concurrent heap liveness analysis}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_itr2.png}
+		\caption{Concurrent Heap liveness analysis iteration 2}
+		\label{fig:nullpointeranalysis}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Example for concurrent heap liveness analysis}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_itr3.png}
+		\caption{Concurrent Heap liveness analysis iteration 3}
+		\label{fig:nullpointeranalysis}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Example for concurrent heap liveness analysis}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_itr4.png}
+		\caption{Concurrent Heap liveness analysis iteration 4}
+		\label{fig:nullpointeranalysis}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Example for concurrent heap liveness analysis}
+	Example of the same program without synchronization edges.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_incorrect.png}
+		\caption{Concurrent Heap liveness analysis without synchronization edges}
+		\label{fig:nullpointeranalysis}
+	\end{figure}
+	An analysis without adding synchronization edges provides better results in this example. This highlights that there are certain problems with this analysis technique
+\end{frame}
+
+\begin{frame}
+	\frametitle{Problems with the analysis technique}
+	\begin{itemize}
+		\item Propagation of
+		data flow values across inter-thread edges  is treated same as along intra-thread edges.
+		\item At program point containing the main statement, the possible live links can be be \emph{x.f1.f2.r} or \emph{x.f2.f1.r}.
+		\item  Final data flow value  obtained after analysis includes imprecise access links \emph{x.f1.r}, \emph{x.f2.r} , \emph {x.\{f2.f1\}\textsuperscript{+}.r}, \emph{x.\{f1.f2\}\textsuperscript{+}.r} 
+		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Problems with the analysis technique}
+	\begin{itemize}
+		\item No bound on the number of transitions from node $f_1$ to $f_2$ and from $f_2$ to $f_1$ in the access graph.
+		\item Thread synchronization edges introduce loops in the program graph
+		\item Cause of imprecise data flow values is due to taking into account execution of critical sections more than once
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Problems with the analysis technique}
+	Execution of multi-threaded programs
+	\begin{itemize}
+		\item Interleaving of statements of the multiple threads
+		\item Addition of synchronization edges leads to formation of loop in the control flow graph
+		\item Data flow value is transferred to every critical section multiple times
+		\item Thus there is a need to identify the critical sections that only execute once
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Analysis of Critical Section Execution}
+	Intra-thread Analysis to identify if critical section is executed once. 
+	\begin{itemize}
+		\item If there is no loop within and across a critical section, it can only be executed once.
+		\item If a loop is present within a critical section, even then the critical section can be executed only once.
+		\item It a loop is present across a critical section in a thread, then the critical section can be executed zero or more number of times.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Adding Thread Info in Access Graphs}
+	Once we know about the number of executions of each critical section there is a need to:  
+	\begin{itemize}
+		\item Need to figure out how to store the thread switchings in an access graph
+		\item Store thread id corresponding to every edge in the access graph
+		\item Identify which paths are possible with respect to the execution semantics.
+		\item For example paths with multiple thread switches into a critical section can't be allowed.  
+	\end{itemize}
+\end{frame}
+
 
 \begin{frame}
 	\frametitle{Tools to Use}

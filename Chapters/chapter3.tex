@@ -45,14 +45,14 @@ An very simple example of call strings method is shown below.\cite{mtpreport}
 public static void main ()
 {
 	B x;
-	// Callsites are appended to the current call string before making call
-	C1 : x = deref(f); 
-	C2 : x = deref(g);
+	// Callsites are appended to the current call string before making call f and g are pointers to nodes in a linked list.
+	C1 : x = after(f); 
+	C2 : x = after(g);
 }
-B deref(B a) // c1 [a = f] c2 [a = h]
+B after(B a) // c1 [a = f] c2 [a = g]
 {
-	x.next = a;
-	return x;
+	return a.next;
+	// C1 [return f.next] C2 [return g.next]
 }
 // c1 [ object return would have its next pointed to f] 
 // c2 [ object returned would have its next field pointed to h]

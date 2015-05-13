@@ -7,14 +7,18 @@ In this report the topics covered are :
 	\item The method of value context used to carry out precise inter-procedural analysis with an example case on handling recursion.
 	\item The technique of constructing sync-cfg for performing intra-procedural data flow analysis of concurrent programs.
 	\item The extension of concurrent analysis to an inter-procedural level, by using VASCO for generating call-graph and designing inter-procedural analysis.
+	\item Problems with the analysis on the sync-cfg/program graph. The reasons as to why this is an imprecise analysis are mentioned.
+	\item Some improvements to the basic sync-cfg concurrent analysis suggested. The improvements distinguish between inter and intra-thread edges. The execution semantics of multi-thread programs is used to come up with a technique performs analysis taking into account valid executions of the program.
+	\item The notion of thread context is introduced in a vague way. Analysis should only be performed over the thread switches which can actually be feasible. This notion is not just heap liveness analysis, but for any general analysis of a multi-threaded concurrent program. 
+	\item The automata like representation of critical section switching can be used to form a exploded-thread-cfg graph and we cn directly perform analysis over the statements in all the valid paths.   
 \end{itemize}
 
 The future work to be done is:
 
 \begin{itemize}
-	\item Implementation of CombinedUnitGraph class to handle programs with more than 2 threads.
-	\item Using Value context method of performing inter-procedural analysis on data-race free concurrent programs containing function calls.
-	\item Implementing Heap reference analysis on concurrent programs containing function calls.
+	\item Comparing the running times of this analysis with the sync-cfg simple analysis.
+	\item Implementation of the transition diagram to automata converter routine. Generation and implementation of exploded-thread-cfg from the automata structure of critical section execution.
+	\item Figuring out if the analysis based on thread context/execution semantics can be used to extend to handle function calls in threads.
 \end{itemize}
 
 %\cite{liveness}\cite{slides}\cite{liveness}\cite{hra}\cite{btpreport}\cite{sootguide}\cite{Arnab2006}\cite{mtpreport}

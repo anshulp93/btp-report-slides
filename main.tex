@@ -15,7 +15,7 @@
 \usepackage{algpseudocode}
 \usepackage{amsthm} % for theorem
 \usepackage{algorithm}
-\addbibresource{bibliography}
+
 
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
@@ -47,6 +47,15 @@
 	breakatwhitespace=true,
 	tabsize=4
 }
+
+%\bibliography{main}
+%\bibliographystyle{alpha}
+\DefineBibliographyStrings{english}{%
+	bibliography = {References},
+}
+
+\addbibresource{main}
+\renewcommand{\bibname}{References}  % for the report or book class
 
 \begin{document}
 \pagenumbering{roman}

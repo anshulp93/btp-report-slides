@@ -20,7 +20,7 @@ Flow-insensitive analysis:
 Flow-sensitive analysis:
 \begin{itemize}
 	\item Takes the control
-	flow structure of a program into account
+	flow structure of a program into count
 	\item Has the computed abstract state that represents different reachable memory states at different program points.
 \end{itemize}
 
@@ -41,7 +41,7 @@ Inter-procedural analysis operates across an entire program makes information fl
 
 \section{Concurrency}
 
-For concurrency, we assume the thread model in Java. The high level abstractions of concurrency (such as the DOALL, FORALL, PARBEGIN , PAREND constructs of FORTRAN ) can be modeled in terms of threads and so we use the model of threads to uniformly refer to concurrent programs. The parbegin and parend operations and synchronization during joining of threads will be handled by the Java thread library. The user needs to extend the thread class and define a run method for the object. Invoking the run method on the thread objects starts concurrent execution. For accessing shared data critical sections need to be guarded by the lock and unlock statements. Also we expect a data-race free program as input for analysis.
+For concurrency, we assume the thread model in Java. We use the model of threads to uniformly refer to concurrent programs. The user needs to extend the thread class and define a run method for the object. Invoking the run method on the thread objects starts the multi-threaded concurrent execution. For accessing shared data, critical sections need to be guarded by the lock and unlock statements. Also we expect a data-race free program as input for analysis.
 
 
 %\section{Pointers in Java}
@@ -56,4 +56,20 @@ The idea of the problem statement is to design a framework for carrying out inte
 
 In this chapter, an introduction to the basics of Data Flow Analysis and its types were described. I have also mentioned about concurrency model and heap accesses for Java. \\
 
-In the subsequent chapters , I will be covering Heap Reference Analysis, Inter-Procedural Analysis and Concurrent Data Flow Analysis respectively. I would then present the tools required for the implementation in the next chapter followed by summary and future work.    
+In Chapter 2, I will be discussing about heap reference analysis. This is an analysis defined over sequential programs. It aims to find out statically the live access links on the heap memory at any program  point. \\
+
+In Chapter 3, I will discuss about inter-procedural analysis techniques. Mainly will be focusing on the value contexts method. Will also mention about other approaches like functional and call strings. \\
+
+In Chapter 4, I will present an analysis technique for threaded concurrent program execution. It adds synchronization edges across critical sections and runs a simple analysis over the synchronized cfg. \\
+
+In Chapter 5, some problems with the concurrent analysis technique will be presented with  a few examples. The reasons causing imprecision will be discussed. \\
+
+In Chapter 6, improvements to the simple sync-cfg technique will be discussed. A modified technique will be presented that takes into account the execution of threaded program. \\
+
+Chapter 7 presents some tools, like VASCO, CombinedUnitGraph \& Call Graph, that can be used for implementation of sync cfg analysis. \\
+
+Chapter 8 presents the conclusions from the report and discusses future work that can be continued. \\
+
+
+  
+ 
