@@ -96,37 +96,6 @@ Guide: Prof. Uday Khedker \\
 	\end{itemize}
 	We will focus on the liveness analysis part of the heap reference analysis.
 	\end{frame}
-\begin{frame}
-\frametitle{Points-to analysis for Java}
-  %\framesubtitle{Related Work}
-	In Java pointers are not created explicitly. All objects in Java are accessed using references. Points-to analysis for Java programs identifies the objects pointed to by references at run time.
-	
-	\begin{figure}[here]
-	\begin{center}
-	\includegraphics[width=8cm]{Figures/rsz_heap.png}
-	\end{center}
-	\caption{Example for heap access and points-to}
-	\label{fig:ex1}
-	\end{figure}
-	
-	
-	
-  \end{frame}
-
-  \begin{frame}
-  \frametitle{Points-to Graph}
-  %\framesubtitle{Related Work}
-	Points-to graph in Java contain two types of edges. The first type of edge is to represent the information that reference variable $v$  is pointing to object $o$. The second type of edge represents the field $f$ of $o_1$ pointing to $o_2$.
-
-	\begin{figure}[here]
-		\begin{center}
-			\includegraphics[width=7cm]{Figures/rsz_points_to_graph.png}
-		\end{center}
-		\caption{Example for points-to graph}
-		\label{fig:ex1}
-	\end{figure}
-
-  \end{frame}
 
 \begin{frame}
 \frametitle{Heap Reference Analysis}
@@ -163,83 +132,7 @@ An access path can be unbounded in the case of loops. We need to set a bound on 
 
 
 % RULE SETS %
-  \begin{frame}
-  \frametitle{Inter-procedural analysis}
-  %\framesubtitle{Analysing existing rule sets}
-  Inter-procedural Analysis is required to obtain more precise results as it is very common that programs can have multiple function calls.
-  \begin{itemize}
-	\item It is essential to consider the effect of function call on the data flow value entering the node.
-	\item Inter-procedural analysis takes into account call return , parameter passing , local variables of the function, return values and recursion into account
-	\item Major issue to be dealt while handling inter-procedural analysis is to deal with calling contexts.
-	\item Context-Sensitive analysis
-	\end{itemize}
-  \end{frame}
   
-  \begin{frame}
-  \frametitle{Call Graph}
-  %\framesubtitle{Analysing existing rule sets}
-  \begin{itemize}
-  	\item Static data structure representing run-time calling relationships among procedures.
-  	\item Call multi-graph is a directed graph which represents calling relationships.
-  	\item In Super graph callsites are connected to the callee procedure entry node and the exit node is connected to return node in the caller.
-  \end{itemize}
-
-  \end{frame}
-
-  \begin{frame}
-  \frametitle{Example}
-  		\begin{figure}[here]
-  			\begin{center}
-  				\includegraphics[width=10cm]{Figures/callgraph.png}
-  			\end{center}
-  			\caption{Call Multi-graph and super graph examples}
-  			\label{fig:cmg_sg}
-  		\end{figure}
-  \end{frame}
-  
-  
-  \begin{frame}
-  \frametitle{Approaches to Inter-procedural Analysis.}
-  \framesubtitle{Value Context Method}
-  Combination of the two views of contexts: data flow values at call site are stored as value contexts and call strings as calling contexts. 
-  \vspace{\baselineskip}
-  
-  A value context is defined by a particular data flow value reaching a procedure. It is used to enumerate and tabulate the summary flow function of the procedure in terms of input and output data flow values.  
-
-  \vspace{\baselineskip}
-  When a new call to a procedure is encountered, the value context table is consulted to decide if the procedure needs to be analyzed again.
-  
-  
-  \end{frame}
-  
-  \begin{frame}
-  \frametitle{Approaches to Inter-procedural Analysis.}
-  \framesubtitle{Value Context Method}
-	 A calling context transition table is maintained  allowing flow of information along inter-procedurally valid paths. 
-	
-	\vspace{\baselineskip}
-	Transitions are recorded in the form ( ($X$,$c$) , $Y$) where $X$ represents calling context, $c$ represents call site and $Y$ represents callee context.
-	
-	\vspace{\baselineskip}
-	 
-	
-  \end{frame}
-  
-  \begin{frame}
-  \frametitle{Example of value context method}
-\begin{figure}[here]
-\begin{center}
-\includegraphics[width=7cm]{Figures/interproc_example.png}
-\end{center}
-\caption{Example for inter-procedural heap liveness}
-\label{fig:extreme}
-\end{figure}
-	
-	In the example the 2 contexts $X_1$ and $X_2$ are stored for the recursive procedure $p$.Value based contexts are used as a cache table for distinct call sites apart from terminating analysis of recursive procedures.
-	
-	
-
-  \end{frame}
   
   \begin{frame}
   \frametitle{Analysis for concurrent programs}
@@ -466,13 +359,163 @@ The insight is that data-flow values are only propagated between threads at the 
 	\end{itemize}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Examples 1}
+	Imposing the restrictions that concurrent sections can only be executed once for $T_1$ and$T_2$. Can discard  access paths containing more than 1 edges labeled 1 or 2.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/conc_analysis_thr_itr3.jpg}
+		\caption{Concurrent Heap liveness analysis example. Note that edges are marked by thread id}
+		\label{fig:threadidanalysis}
+	\end{figure}
+\end{frame}
 
 \begin{frame}
-	\frametitle{Tools to Use}
+	\frametitle{Examples 2}
+	 Critical section of thread 1 and thread 2 can only be executed once. Can allow 0 or more occurrence of edges labeled 2 but the number of edges labeled 1 must strictly be 1 in a access graph path.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/rsz_loop_inside.png}
+		\caption{Concurrent Heap liveness analysis example (on sync cfg). Note that edges in access graphs are marked by thread id}
+		\label{fig:threadidanalysis}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Example 3}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/rsz_loop_outside.png}
+		\caption{Concurrent Heap liveness analysis example (on sync-cfg).}
+		\label{fig:threadidanalysis}
+	\end{figure}
+	Access graphs returned are the same for both Example 2 and Example 3. There is a need to ensure that the edge from $f_1$ to $f_2$ in the access graph can be traversed any number of times. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Changes in the analysis}
+ 	For ensuring inter-thread edges are treated according to the critical section execution semantics, impose conditions on them. 
+ 	Label the edges with the number of times the transition is possible. Considering the examples, these are the desired access graphs
+ 	\begin{figure}
+ 		\centering
+ 		\includegraphics[width=0.8\textwidth]{Figures/access_graph_rep.png}
+ 		\caption{Desired Access graphs for the three examples}
+ 		\label{fig:ch5example}
+ 	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Concurrent Heap Access Examples}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/tree1.png}
+		\caption{Concurrent access example in a tree}
+		\label{fig:ch5example}
+	\end{figure}
+	If $C_1$ is executed first then the object \emph{x.l.r} is accessed otherwise \emph{x.r.l} is accessed. Corresponds to the first example
+\end{frame}
+
+\begin{frame}
+	\frametitle{Concurrent Heap Access Examples}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/tree2.png}
+		\caption{Concurrent access example in a tree}
+		\label{fig:ch5example}
+	\end{figure}
+	Objects accessed will satisfy the regular expression \emph{x.l.r\textsuperscript{*}} or \emph{x.r\textsuperscript{*}.l} depending on the starting critical section.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Concurrent Heap Access Examples}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/tree3.png}
+		\caption{Another Concurrent access example in a tree}
+		\label{fig:ch5example}
+	\end{figure}
+	$C_2$ can be executed any number of times. The difference from the last example being that $C_2$\textsuperscript{*} can be executed after ($C_2$,$C_1$).
+\end{frame}
+
+\begin{frame}
+	\frametitle{Concurrent Heap Access Examples}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/tree3.png}
+		\caption{Another Concurrent access example in a tree}
+		\label{fig:ch5example}
+	\end{figure}
+	$C_2$ can be executed any number of times. The difference from the last example being that $C_2$\textsuperscript{*} can be executed after ($C_2$,$C_1$).
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Concurrent Heap Access Examples}
+	An example when any number of $C_1$ and $C_2$ executions are possible and there are no restrictions on thread-switching. Possible executions are ($C_1$?,$C_2$?)\textsuperscript{+}.
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Figures/tree4.png}
+		\caption{Another Concurrent access example in a tree}
+		\label{fig:ch5example}
+			
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Construction a transition system}
+	Once we have identified the critical sections and their number of executions possible, we can create a transition system with nodes being the critical section and edges being transitions from a critical section to another based on condition of execution semantics.
+	
+	\vspace{\baselineskip}
+	
+	This condition can be on count of nodes/critcal section execution and the program order conditions(intra-thread order of statements). In case of 2 critical sections in the same thread, the condition to the incoming edges to the second one must be the predicate $C_1$ \textgreater= 1 \&\& $C_2$ \textless 1
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.4\textwidth]{Figures/automata_rep.png}
+		\caption{An example transition system}
+		\label{fig:ch5example}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conversion of transition system to automata}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.6\textwidth]{Figures/automata_state.png}
+		\caption{Ensuring S gets visited only once for a valid path}
+		\label{fig:ch5example}
+	\end{figure}
+	We need to come up with a way such to ensure that states representing critical sections can only be reached once. All the unreachable states in the two copies are deleted. Also the conditions to the duplicated states in the right copy gets conjuncted by the count of that states \textless= 1.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conversion of transition system to automata}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.4\textwidth]{Figures/automata_conv.png}
+		\caption{Converting the condtion based transition system to automata like structure.}
+		\label{fig:ch5example}
+	\end{figure}
+	The executions possible are $C_2$,$C_1$ and $C_1$$C_2$.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conclusions}
 	\begin{itemize}
-		\item \emph{SOOT}: Java Byte Code Optimization Framework. Can implement precise intra-procedural analysis. SPARK engine provided call graph.
-		\item \emph{VASCO}: Framework for carrying out precise inter-procedural analysis. Returns a better call graph as compared to SPARK.
-		\item \emph{CombinedUnitGraph}: Generation of sync-cfg for programs containing upto 2 threads. Need to extend it to $n$ threads.
+	\item Problems with the analysis on the sync-cfg/program graph and possible reasons. 
+	\item Some improvements to the basic sync-cfg concurrent analysis suggested. Distinguish between inter and intra-thread edges. Handle execution semantics of critical sections and thread switchings.
+	\item The notion of thread context(execution orders) is introduced in a vague way. Analysis should only be performed over the thread switches which can actually be feasible. 
+	\item The automata representation of execution orders can be used to form an exploded-thread-cfg graph and we can directly perform analysis over the statements in the execution order.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Future work}
+	\begin{itemize}
+		\item Finding if this method can be applied to other concurrent analysis.
+		\item Implementation of the transition diagram to automata converter routine. Generation and implementation of exploded-thread-cfg from the automata structure of critical section execution.
+		\item Figuring out if the analysis based on thread context/execution semantics extended to handle function calls in threads. (Extension to Inter-procedural)
 	\end{itemize}
 \end{frame}
 
